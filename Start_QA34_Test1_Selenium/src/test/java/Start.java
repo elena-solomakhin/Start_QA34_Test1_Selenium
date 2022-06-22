@@ -64,18 +64,17 @@ public class Start {
         List<WebElement> list =wd.findElements(By.cssSelector("button"));
       list.get(1).click();
       //from here script don't work
-      WebElement signOut= wd.findElement(By.cssSelector(".navbar-logged_nav__2Hx7M button"));
-      signOut.click();
-      emailTextBox.click();
-      emailTextBox.clear();
-      emailTextBox.sendKeys("roman6@gmail.com");
-      passwordTextBox.click();
-      passwordTextBox.clear();
-      passwordTextBox.sendKeys("qqQQ1234$");
+      //WebElement signOut= wd.findElement(By.cssSelector(".navbar-logged_nav__2Hx7M button"));
+       // "button:last-child"
+     // signOut.click();
+
       //second variant
-      WebElement registr= wd.findElement(By.cssSelector(".login_login__3EHKB>button:last-child"));
-      registr.click();
+        // WebElement registr= wd.findElement(By.cssSelector(".login_login__3EHKB>button:last-child"));
+      //  WebElement registr= wd.findElement(By.cssSelector("button:last-child"));
+        //   registr.click();
         wd.quit();
     }
-
+    @Test
+    public void firstRegistrTest() {
+    }
 }
